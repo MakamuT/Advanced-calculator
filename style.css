@@ -1,22 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 body{
-    min-height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
     text-align: center;
     background: #eeeeee;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-.wrapper h2{
-font-size: 40px;
-margin-bottom: 10px;
-}
+
 .btn input[type="checkbox"]{
     position: relative;
-    width: 80px;
-    height: 40px;
+    width: 50px;
+    height: 20px;
     appearance: none;
     outline: none;
     border-radius: 20px;
@@ -31,8 +26,8 @@ margin-bottom: 10px;
 .btn input[type="checkbox"]::before{
      content: '';
      position: absolute;
-     width: 36px;
-     height: 36px;
+     width: 16px;
+     height: 16px;
      border-radius: 50%;
      top: 2px;
      left: 2px;
@@ -48,4 +43,35 @@ margin-bottom: 10px;
 .dark-mode{
     background: #222;
     color: #eeeeee;
+}
+
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 20px;
+    color: aqua;
+    cursor: pointer;
+    margin: 10px;
+}
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+form .display input{
+    text-align: center;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+form input.op{
+    color: deeppink;
+}
+form input.eql{
+    width: 145px;
 }

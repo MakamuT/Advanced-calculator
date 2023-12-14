@@ -6,19 +6,22 @@
     <title>Advanced Calculator</title>
     <script src="ac.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
     <div class="container">
     <div class="wrapper">
-        <h2>Switch Mode</h2>
         <div class="btn">
             <input type="checkbox" id="darkModeButton">
         </div>
     </div>
+    <i class="fa fa-microphone" ></i>
     <div class="calculator">
         <form>
             <div class="display">
+                <i class="fa fa-microphone">
                 <input type="text" name="display">
+                </i>
             </div>
             <div>
                 <input type="button" value="AC" onclick="display.value = ''"  class="op">
