@@ -7,6 +7,19 @@ body{
     background: #eeeeee;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+/**dark mode button**/
+label{
+    background-color: #222;
+    display: inline-block;
+    margin-bottom: -1rem;
+    margin-left: 15rem;
+    width: 50px;
+    height: 34px;
+    border-radius: 56px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease background-color;
+}
 .toggle{
     position: relative;
     display: inline-block;
@@ -18,36 +31,25 @@ body{
     width: 0;
     height: 0;
 }
-.slider{
-    position: absolute;
-    cursor: pointer;
-    margin: 0;
-    background-color: black;
-    -webkit-transition: -4s;
-    transition: -4s;
-}
-.slider ::before{
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: -4s;
-    transition: -4s;
-}
-input:checked .slider{
+input:checked .toggle{
     background-color: white;
 }
-input:checked .slider::before{
+input:checked .toggle::before{
     background-color: black;
 }
 .dark-mode{
     background-color: #222;
     color: #eeeeee;
 }
-
+/** calculator**/
+.container{
+     background: transparent;
+     box-shadow: 0 8px 32px 0 #1f26875e;
+     backdrop-filter: blur(10px);
+     -webkit-backdrop-filter: blur(10px);
+     border-radius: 10px;
+     border: 1px solid #ffffff2e;
+}
 .calculator form input{
     border: 0;
     outline: 0;
@@ -64,7 +66,12 @@ input:checked .slider::before{
 form .display{
     display: flex;
     justify-content: flex-end;
-    margin: 20px 0;
+    margin: 30px 0;
+    border-radius: 15px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 20px;
+    color: aqua;
 }
 form .display input{
     text-align: center;
